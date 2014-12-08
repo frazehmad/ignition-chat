@@ -65,15 +65,20 @@ ignitionChat.pubnubCls.customer = function(){
         }
         
         if (support == 0) {
-            $('.msg_container_base').html('Support agent is not available. Click refresh to try again.');
+            $('.msg_container_base').html('Support agent is not available. Click <a href="javascript:this.location = \'\';">here</a> to refresh.');
         }
         else if (m.occupancy == 2) {
-            $('.msg_container_base').html('Support agent is busy. Click refresh to again.');
+            $('.msg_container_base').html('Support agent is busy. Click <a href="javascript:this.location = \'\';">here</a> to refresh.');
         }
         else {
             // connect to channel
             pubnubCls.subscribe('customer');
         }                   
+    };
+
+    var reloadIframe = function(){
+        //$('#igcIframe').attr('src', $('#igcIframe').attr('src'));
+        console.log('reload');
     };
     
     // publish
@@ -144,7 +149,8 @@ ignitionChat.pubnubCls.customer = function(){
         init : init,
         publish : publish,
         chat_receive : chat_receive,
-        presence_message : presence_message
+        presence_message : presence_message,
+        reloadIframe : reloadIframe
     };
 
 }();
