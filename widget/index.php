@@ -139,7 +139,7 @@
   </head>
   <body>
     <div class="container">
-        <div class="row chat-window col-xs-16 col-md-12" id="chat_window_1" style="margin-left:10px;">
+        <div class="row <?php echo (!empty($f) ? 'chat-window' : NULL); ?> col-xs-16 col-md-12" id="chat_window_1" style="margin-left:10px;">
             <div class="col-xs-12 col-md-12">
               <div class="panel panel-default">
                     <div class="panel-heading top-bar">

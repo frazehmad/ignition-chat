@@ -67,7 +67,7 @@ ignitionChat.pubnubCls.customer = function(){
         if (support == 0) {
             $('.msg_container_base').html('Support agent is not available. Click <a href="javascript:this.location = \'\';">here</a> to refresh.');
         }
-        else if (m.occupancy == 2) {
+        else if (m.occupancy == 2 && channel != 'demo') {
             $('.msg_container_base').html('Support agent is busy. Click <a href="javascript:this.location = \'\';">here</a> to refresh.');
         }
         else {
