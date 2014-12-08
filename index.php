@@ -123,12 +123,16 @@
 								</p>
 								<div style="background-color: #FEEFB3; padding: 5px; color: #9F6000; margin: -10px 0 10px;">
 									<strong>VERY IMPORTANT :</strong><br />
-									Place the above code inside the secure area of the your website.
+									Place the above code inside the secure area of your website before the &lt;/body&gt; tag.
 								</div>
 								<p>
 									Frontend Widget Code:<br />
 									<textarea style="width: 100%;"onclick="this.focus(); this.select();"><script>var _igc = _igc || []; _igc.push(['<?php echo $front_password; ?>']); _igc.push(['f']); (function() {var igc = document.createElement('script'); igc.type = 'text/javascript'; igc.async = true; igc.src = 'http://<?php echo $_SERVER['SERVER_NAME']; ?>/igc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(igc, s); })();</script></textarea>
 								</p>
+								<div style="background-color: #FEEFB3; padding: 5px; color: #9F6000; margin: -10px 0 10px;">
+									<strong>VERY IMPORTANT :</strong><br />
+									Place the above code anywhere before the &lt;/body&gt; tag.
+								</div>
 								<?php } else { ?>
 								<form action="" class="row" method="post">
 										
