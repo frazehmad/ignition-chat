@@ -75,11 +75,6 @@ ignitionChat.pubnubCls.customer = function(){
             pubnubCls.subscribe('customer');
         }                   
     };
-
-    var reloadIframe = function(){
-        //$('#igcIframe').attr('src', $('#igcIframe').attr('src'));
-        console.log('reload');
-    };
     
     // publish
     var publish = function() {
@@ -149,8 +144,7 @@ ignitionChat.pubnubCls.customer = function(){
         init : init,
         publish : publish,
         chat_receive : chat_receive,
-        presence_message : presence_message,
-        reloadIframe : reloadIframe
+        presence_message : presence_message
     };
 
 }();

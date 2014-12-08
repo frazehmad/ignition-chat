@@ -15,8 +15,8 @@ ignitionChat.pubnubCls = function(){
         
         // init pubnub
         obj = PUBNUB.init({
-            publish_key: 'demo',
-            subscribe_key: 'demo',
+            publish_key: 'pub-c-610bda8c-a1ac-4794-8daa-f2519991e59b',
+            subscribe_key: 'sub-c-095cdb0a-7bee-11e4-8ce0-02ee2ddab7fe',
             uuid: uuid
         });
 
