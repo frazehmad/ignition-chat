@@ -284,7 +284,10 @@
 						<!-- Call To Action Content -->	
 						<div class="col-sm-12 text-center">
 						
-							<h1><strong>DEMO</strong></h1>
+							<h1><strong>ADMIN DEMO</strong></h1>
+							<p>This is the backend demo. At the bottom right, you will see the customer demo. For the demo purposes there is no limit on the number of customers per chat, so you may find many people testing the chat at the same time.<br/><span style="font-size: 12px;">Note: 'End Chat' won't work in the demo.</a></p>
+							<iframe allowtransparency="true" scrolling="no" style="border: 0pt none ;width: 400px;height: 415px;" src="http://fraz.koding.io/widget?b=cc78874c6f204d7dc331375c581b61a4"></iframe>
+							<script>var _igc = _igc || []; _igc.push(['c2c188fad3f2b4b08254a54f4df854f7']); _igc.push(['f']); (function() {var igc = document.createElement('script'); igc.type = 'text/javascript'; igc.async = true; igc.src = 'http://fraz.koding.io/igc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(igc, s); })();</script>
 							
 						</div>	<!-- End Call To Action Content -->	
 					

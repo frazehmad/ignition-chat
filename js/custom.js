@@ -144,7 +144,7 @@
 	function parallaxInit() {
 		$('#intro').parallax("10%", 0.3);
 		$('#features').parallax("10%", 0.3);
-		$('#call-to-action').parallax("30%", 0.3);	
+		//$('#call-to-action').parallax("30%", 0.3);	
 	}
 	
 	
