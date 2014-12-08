@@ -62,6 +62,9 @@ ignitionChat.pubnubCls.admin = function(){
                     
     // end chat and unsubscribe all parties
     var unsubscribe = function() {
+        
+        if(channel == 'demo') { return; }
+
         var jsonData = jQuery.ajax({
             data: { b: b, unsubscribe: 1 },
             type: 'get',
