@@ -12,6 +12,7 @@ ignitionChat.pubnubCls = function(){
 
     // Construct
     var init = function(){
+        
         // init pubnub
         obj = PUBNUB.init({
             publish_key: 'demo',
@@ -19,7 +20,7 @@ ignitionChat.pubnubCls = function(){
             uuid: uuid
         });
 
-        box = document.getElementById('msg_container_base');
+        //box = document.getElementById('msg_container_base');
     };
 
     var translate = function(srcLang, targetLang, text, sender){
@@ -44,6 +45,8 @@ ignitionChat.pubnubCls = function(){
     // subscribe
     var subscribe = function(who_is) {
 
+        console.log(who_is);
+
         var child;
 
         if(who_is == 'customer') var child = ignitionChat.pubnubCls.customer;
@@ -65,17 +68,17 @@ ignitionChat.pubnubCls = function(){
         
     // disconnection message
     var disconnect_message = function() {
-        box.innerHTML = ("You've been disconnected from chat. Re-connecting...").replace(/[<>]/g, '')+'<br />'+box.innerHTML;
+        chat.appendMessage("You've been disconnected from chat. Re-connecting...");
     };
         
     // re-connection message
     var reconnect_message = function() {
-        box.innerHTML = ("You've been re-connected.").replace(/[<>]/g, '')+'<br />'+box.innerHTML;
+        chat.appendMessage("You've been re-connected.");
     };
         
     // error message
     var error_message = function(m) {
-        box.innerHTML = (m.message).replace(/[<>]/g, '')+'<br />'+box.innerHTML;
+        chat.appendMessage(m.message);
     };
 
     var publish = function(sender, language){

@@ -34,6 +34,7 @@
         else {
           $row = $stmt->fetch(PDO::FETCH_ASSOC);
           $channel = $row['channel'];
+          $channel_status = $row['status'];
         }
       }
     }
