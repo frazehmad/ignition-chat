@@ -15,8 +15,8 @@ ignitionChat.pubnubCls = function(){
         
         // init pubnub
         obj = PUBNUB.init({
-            publish_key: 'pub-c-610bda8c-a1ac-4794-8daa-f2519991e59b',
-            subscribe_key: 'sub-c-095cdb0a-7bee-11e4-8ce0-02ee2ddab7fe',
+            publish_key: 'demo', //'pub-c-610bda8c-a1ac-4794-8daa-f2519991e59b',
+            subscribe_key: 'demo', //'sub-c-095cdb0a-7bee-11e4-8ce0-02ee2ddab7fe',
             uuid: uuid
         });
 
@@ -45,12 +45,10 @@ ignitionChat.pubnubCls = function(){
     // subscribe
     var subscribe = function(who_is) {
 
-        console.log(who_is);
-
         var child;
 
         if(who_is == 'customer') var child = ignitionChat.pubnubCls.customer;
-        if(who_is == 'admin') var child = ignitionChat.pubnubCls.admin;
+        if(who_is == 'support') var child = ignitionChat.pubnubCls.admin;
 
         PUBNUB.subscribe({
             channel : channel,
@@ -61,7 +59,6 @@ ignitionChat.pubnubCls = function(){
             presence: child.presence_message,
             error: error_message,
             heartbeat: 10,
-            state: { type: uuid },
             restore: true
         });
     };

@@ -11,7 +11,7 @@ ignitionChat.pubnubCls.admin = function(){
 
     // Construct
     var init = function(){
-        pubnubCls.subscribe('admin');
+        pubnubCls.subscribe('support');
     };
         
     // receive chat
@@ -106,6 +106,7 @@ ignitionChat.pubnubCls.admin = function(){
     
     // presence message
     var presence_message = function(m) {
+        console.log(m); 
         if (m.action == 'timeout' && m.uuid == 'customer') {
             if (status_message == 'Customer has left the chat.')
                 return;

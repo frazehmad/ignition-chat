@@ -59,7 +59,7 @@ ignitionChat.pubnubCls.customer = function(){
         var support = 0;
         for (p in m.uuids) {
             if(m.uuids.hasOwnProperty(p)) {
-                if (m.uuids[p].state.type == 'support')
+                if (m.uuids[p].uuid == 'support')
                     support = 1;
             }
         }
@@ -123,7 +123,8 @@ ignitionChat.pubnubCls.customer = function(){
     };
 
     // presence message
-    var presence_message = function(m) {                   
+    var presence_message = function(m) { 
+        console.log(m);                  
         if (m.action == 'timeout' && m.uuid == 'support') {
             if (status_message == 'Support has left the chat.')
                 return;

@@ -125,7 +125,7 @@
     <script>
     var channel = '<?php echo !empty($channel) ? $channel : NULL; ?>';
     var status_message = '';
-    var uuid = '<?php if (isset($f)) echo 'customer'; else if (isset($b)) echo 'support'; ?>';
+    var uuid = '<?php if (isset($b)) echo 'support'; else if (isset($f)) echo 'customer'; ?>';
     var b = '<?php echo (!empty($b) ? $b : NULL); ?>';
     var BASE_URL = '<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/widget/'; ?>';
     </script>
