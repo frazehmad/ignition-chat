@@ -4,8 +4,6 @@ IgnitionChat allows to chat without language barrier. It translates your message
 
 ## Description
 
-[![Koding Hackathon](/images/badge.png?raw=true "Koding Hackathon")](https://koding.com/Hackathon)
-
 ### Connect with your Customers!
 
 It's so important to connect with your international customers and understand their needs and make them feel good about your products and brand, but language can often be a barrier. Ignition Chat helps you eliminate that barrier.
@@ -22,7 +20,7 @@ Instead of hiring live support personnel for each of your target nationality, Ig
 
 Here provide couple screenshots of your project. You can use a tool like https://monosnap.com/welcome or https://droplr.com to take a screenshot. Animated gifs are also welcome.
 
-![Koding](https://koding.com/a/site.landing/images/slideshow/2x/ss-terminal.png "Koding")
+![Simple Widget Code](https://storage.jumpshare.com/preview/87eTZm6URD1s3hjSB0gtQIoOSR-L3lCUirAMMOy6Jyg-Rs0y9KjFkK-HPeBTYM2Z61-gynYvhJlPT2X22YN5Ig "Simple Widget Code")
 ![Koding](https://koding.com/a/site.landing/images/slideshow/2x/ss-ide.png "Koding")
 
 ## APIs used
@@ -42,3 +40,7 @@ Here provide couple screenshots of your project. You can use a tool like https:/
 
 - Trello & Skype
 - Crossway Startup Template
+
+# Chat Code
+
+All code related to main chat application can be found under 'widget' folder.

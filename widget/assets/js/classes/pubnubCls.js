@@ -58,7 +58,7 @@ ignitionChat.pubnubCls = function(){
             reconnect: reconnect_message,
             presence: child.presence_message,
             error: error_message,
-            heartbeat: 10,
+            heartbeat: 30,
             restore: true
         });
     };
