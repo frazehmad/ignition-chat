@@ -1,12 +1,22 @@
-# Koding Global Virtual Hackathon's Submission Example
+# Ignition Chat
 
-This is a sample submission repository for the hackathon. If you don't know what that is, please [go here](https://koding.com/Hackathon). You can fork this repo and use this as a starting point.
+IgnitionChat allows to chat without language barrier. It translates your messages in real time. Ignition Chat is focused on helping e-commerce stores with effective real-time communication with their international customers. This project is emerged in Koding Hackathon. Interact with demo [here](http://fraz.koding.io)
 
 ## Description
 
 [![Koding Hackathon](/images/badge.png?raw=true "Koding Hackathon")](https://koding.com/Hackathon)
 
-A brief introduction to your project. It should include the motivation behind the project and also how it addresses the hackthon theme you've selected.
+### Connect with your Customers!
+
+It's so important to connect with your international customers and understand their needs and make them feel good about your products and brand, but language can often be a barrier. Ignition Chat helps you eliminate that barrier.
+
+### Increase Sales!
+
+Ignition Chat helps you close more sales as you will be able to communicate effectively with your customers in the language they can understand.
+
+### Reduce Costs!
+
+Instead of hiring live support personnel for each of your target nationality, Ignition Chat helps you reduce costs by translating the customers for you.
 
 ## Screenshots
 
@@ -17,4 +27,18 @@ Here provide couple screenshots of your project. You can use a tool like https:/
 
 ## APIs used
 
-Provide a list of APIs you used in this project.
+- PubNub API
+- Google Translate API
+
+## Languages, Frameworks and Libraries
+
+- JavaScript
+- Twitter Bootstrap
+- Handlebars Templates
+- PHP/MySQL
+- PubNub JavaScript SDK
+
+## Miscellaneous
+
+- Trello & Skype
+- Crossway Startup Template
